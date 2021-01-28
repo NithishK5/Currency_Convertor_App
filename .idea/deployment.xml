@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cafe.cis.strath.ac.uk" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="cafe.cis.strath.ac.uk">
+        <serverdata>
+          <mappings>
+            <mapping deploy="RotrevnocYcnerruc-317" local="$PROJECT_DIR$" web="/RotrevnocYcnerruc-317" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

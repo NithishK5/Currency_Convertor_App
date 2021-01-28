@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a2150c42-1579-4ccf-99ce-eb28561d5838" name="cafe.cis.strath.ac.uk" url="https://devweb2020.cis.strath.ac.uk/~pkb18161/">
+        <fileTransfer rootFolder="/home/pkb18161/DEVWEB/2020" accessType="SFTP" host="cafe.cis.strath.ac.uk" port="22" sshConfigId="0dc20c08-bad3-4414-8d7b-a5cbd2e36043" sshConfig="pkb18161@cafe.cis.strath.ac.uk:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
