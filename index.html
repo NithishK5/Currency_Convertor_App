@@ -4,16 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Travel Rate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="icon" sizes="192x192" href="assets/image/icon.png">
+    <link rel="apple-touch-icon" href="assets/image/icon.png">
+    <link rel="shortcut icon" href="assets/image/icon.png" type="image/x-icon">
 
 </head>
 
 <body>
+<div class="ribbon">Travel Rates</div>
 <main class="container">
     <nav class="navbar" id="navbar" data-state="is-close">
         <ul class="navbar-box">
@@ -24,7 +32,7 @@
             </li>
             <li class="navbar-control">
                 Home
-                <select class="from" id="from">
+                <select class="from" id="to">
                     <option class = "EUR" value="1"> EUR &#x1F1EA;&#x1F1FA;</option>
                     <option class = "USD" value="1.1066">USD &#x1F1FA;&#x1F1F8;</option>
                     <option class = "JPY" value="120.10">JPY &#x1F1EF;&#x1F1F5;</option>
@@ -63,7 +71,7 @@
             </li>
             <li class="navbar-control">
                 Visiting
-                <select id="to">
+                <select id="from">
                     <option class = "EUR" value="1">EUR &#x1F1EA;&#x1F1FA;</option>
                     <option class = "USD" value="1.1066">USD &#x1F1FA;&#x1F1F8;</option>
                     <option class = "JPY" value="120.10">JPY &#x1F1EF;&#x1F1F5;</option>
@@ -132,9 +140,17 @@
         </article>
     </section>
 </main>
+<div class="ribbon"></div>
 <script src="assets/js/Model.js"></script>
 <script src="assets/js/View.js"></script>
 <script src="assets/js/Controller.js"></script>
+<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+</script>
 </body>
 
 </html>
